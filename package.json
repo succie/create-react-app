@@ -1,0 +1,28 @@
+{
+  "name": "@succie/create-react-app",
+  "version": "1.0.1",
+  "main": "./bin/index.js",
+  "bin": "./bin/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rimraf bin"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^12.7.5",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/succie/create-react-apps.git"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ]
+}
