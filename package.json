@@ -1,8 +1,9 @@
 {
   "name": "@succie/create-react-app",
-  "version": "1.0.1",
-  "main": "./bin/index.js",
-  "bin": "./bin/index.js",
+  "version": "1.0.0",
+  "bin": {
+    "scra": "./bin/index.js"
+  },
   "license": "MIT",
   "scripts": {
     "build": "yarn clean && tsc",
@@ -19,10 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/succie/create-react-apps.git"
+    "url": "https://github.com/succie/create-react-apps.git"
   },
   "files": [
     "bin/",
     "README.md"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
